@@ -1,0 +1,5 @@
+type Store @model {
+  id: ID!
+  name: String!
+  currentCount: Int
+}
