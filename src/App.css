@@ -1,38 +1,110 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:  border-box;
+}
+
+body {
+  font-family: 'monseratt', sans-serif;
+}
+
+.app {
+  background-image: url('./assets/novel_coronavirus.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+  padding: 25px;
+}
+
+
+.location {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+
+  color: white;
+  background-color: rgba(90, 90, 90, 0.4);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+  font-size: 20px;
+}
+
+.current-count {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.current-count .value {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  width: 80vw;
+  border-radius: 16px;
+  padding: 35px 45px;
+
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgb(50, 50, 50, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgb(0, 0, 0, 0.5);
+
+  transition: 0.8s ease-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.safe {
   color: white;
+  background-color: rgba(136, 255, 136, 0.8);
 }
 
-.App-link {
-  color: #61dafb;
+.warn {
+  color: white;
+  background-color: rgba(255, 213, 136, 0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.danger {
+  color: white;
+  background-color: rgba(255, 136, 136, 0.8);
+}
+
+.add-buttons {
+  text-align: center;
+  min-height: 30vh;
+}
+
+.add-buttons button {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 25vh;
+  font-size: 48px;
+  padding: 20px 20px;
+  margin: 5px 5px;
+  color: white;
+  background-color: rgba(92, 184, 92, 0.7);
+  text-shadow: 3px 6px rgb(50, 50, 50, 0.5);
+
+}
+
+.remove-buttons {
+  text-align: center;
+  min-height: 30vh;
+
+}
+.remove-buttons button {
+  width: 30%;
+  height: 25vh;
+  font-size: 48px;
+  padding: 20px 20px;
+  margin: 5px 5px;
+  color: white;
+  background-color: rgba(217, 83, 79, 0.7);
+  text-shadow: 3px 6px rgb(50, 50, 50, 0.5);
 }
