@@ -10,6 +10,14 @@
             "StackName": "amplify-covid-counter-demo-205023",
             "StackId": "arn:aws:cloudformation:us-east-1:590312749310:stack/amplify-covid-counter-demo-205023/68e03e90-a263-11ea-bb9a-123cb1b397a4",
             "AmplifyAppId": "d150d48ea2ufej"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d150d48ea2ufej",
+                    "type": "manual"
+                }
+            }
         }
     }
 }
