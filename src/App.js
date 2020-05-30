@@ -18,14 +18,14 @@ function App() {
             <div className={(count < 50) ? "value safe" : (count > 90) ? "value danger" : "value warn"}>{count}</div>
           </div>
           <div className="add-buttons">
-            <button onClick={e => incrementCount(1)}>+1</button>
-            <button onClick={e => incrementCount(2)}>+2</button>
-            <button onClick={e => incrementCount(5)}>+5</button>
+            <button onClick={() => incrementCount(1)}>+1</button>
+            <button onClick={() => incrementCount(2)}>+2</button>
+            <button onClick={() => incrementCount(5)}>+5</button>
           </div>
           <div className="remove-buttons">
-            <button onClick={e => incrementCount(-1)}>-1</button>
-            <button onClick={e => incrementCount(-2)}>-2</button>
-            <button onClick={e => incrementCount(-5)}>-5</button>
+            <button onClick={() => incrementCount(-1)}>-1</button>
+            <button onClick={() => incrementCount(-2)}>-2</button>
+            <button onClick={() => incrementCount(-5)}>-5</button>
           </div>
         </main>
     </div>
