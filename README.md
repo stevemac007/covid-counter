@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple `react` demo application to show simple state and event management.
+The concept of the application is to be able to count the people in a physical space.
 
 ## Available Scripts
 
